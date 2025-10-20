@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Halaman Login -->
+    <div id="login-page" class="page active">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>AI Chat Assistant</h1>
+                <p>Masuk ke akun Anda</p>
+            </div>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn-primary">Masuk</button>
+            </form>
+            <div class="login-footer">
+                <p>Belum punya akun? <a href="#" id="show-signup">Daftar di sini</a></p>
+            </div>
+            <div class="credit">Dibuat oleh AmaruAj</div>
+        </div>
+    </div>
+
+    <!-- Halaman Signup -->
+    <div id="signup-page" class="page">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>AI Chat Assistant</h1>
+                <p>Buat akun baru</p>
+            </div>
+            <form id="signup-form">
+                <div class="input-group">
+                    <label for="signup-name">Nama Lengkap</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <button type="submit" class="btn-primary">Daftar</button>
+            </form>
+            <div class="login-footer">
+                <p>Sudah punya akun? <a href="#" id="show-login">Masuk di sini</a></p>
+            </div>
+            <div class="credit">Dibuat oleh AmaruAj</div>
+        </div>
+    </div>
+
+    <!-- Halaman Utama Chat -->
+    <div id="chat-page" class="page">
+        <div class="chat-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>AI Assistant</h2>
+                    <button id="new-chat" class="btn-new-chat">+ Obrolan Baru</button>
+                </div>
+                <div class="chat-history">
+                    <h3>Riwayat Obrolan</h3>
+                    <ul id="chat-list">
+                        <!-- Daftar obrolan akan ditampilkan di sini -->
+                    </ul>
+                </div>
+                <div class="user-info">
+                    <div class="user-details">
+                        <span id="user-name">Pengguna</span>
+                        <button id="logout" class="btn-logout">Keluar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area Chat Utama -->
+            <div class="chat-main">
+                <div class="chat-header">
+                    <h3 id="current-chat-title">Obrolan Baru</h3>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Pesan akan ditampilkan di sini -->
+                    <div class="welcome-message">
+                        <h2>Selamat datang di AI Assistant</h2>
+                        <p>Mulai obrolan baru dengan AI. Tanyakan apa saja!</p>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="chat-input">
+                        <input type="text" id="message-input" placeholder="Ketik pesan Anda di sini...">
+                        <button id="send-button">Kirim</button>
+                    </div>
+                    <div class="credit-bottom">Dibuat oleh AmaruAj</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
